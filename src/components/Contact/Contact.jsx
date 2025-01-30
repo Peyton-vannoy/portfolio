@@ -16,7 +16,7 @@ function Contact() {
           </Button>
           <Button
             variant="outline-dark"
-            href="#"
+            href="https://www.linkedin.com/in/peyton-vannoy"
             target="_blank"
             className="mx-2"
           >

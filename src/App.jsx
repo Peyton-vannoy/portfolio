@@ -8,15 +8,10 @@ import Navigation from "./components/Navigation/Navigation";
 function App() {
   return (
     <div className="App">
-      {/* Navigation */}
       <Navigation />
-      {/* Hero Section */}
       <Hero />
-      {/* Projects Section */}
       <Project />
-      {/* About Section */}
       <About />
-      {/* Contact Section */}
       <Contact />
     </div>
   );
