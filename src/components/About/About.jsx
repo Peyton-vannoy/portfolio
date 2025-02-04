@@ -32,7 +32,8 @@ function About() {
               <span className="badge bg-primary m-1">HTML/CSS</span>
               <span className="badge bg-primary m-1">Express</span>
               <span className="badge bg-primary m-1">MongoDB</span>
-              {/* Add more skills */}
+              <span className="badge bg-primary m-1">TailwindCSS</span>
+              <span className="badge bg-primary m-1">Bootstrap</span>
             </div>
           </Col>
         </Row>

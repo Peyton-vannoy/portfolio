@@ -9,7 +9,7 @@ function Contact() {
         <div className="contact-links">
           <Button
             variant="outline-dark"
-            href="mailto:your@email.com"
+            href="mailto:peyton.vannoy1999@gmail.com"
             className="mx-2"
           >
             Email
@@ -24,7 +24,7 @@ function Contact() {
           </Button>
           <Button
             variant="outline-dark"
-            href="#"
+            href="https://github.com/Peyton-vannoy"
             target="_blank"
             className="mx-2"
           >
