@@ -53,7 +53,7 @@ function Project() {
             <Card>
               <Card.Img
                 style={{
-                  maxHeight: "180px",
+                  height: "180px",
                   objectFit: "cover",
                 }}
                 className="img-fluid"
@@ -87,58 +87,6 @@ function Project() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={4} className="mb-4">
-            <Card>
-              <Card.Img variant="top" src="project-image.jpg" />
-              <Card.Body>
-                <Card.Title>Project Name</Card.Title>
-                <Card.Text></Card.Text>
-                <div className="d-flex justify-content-between">
-                  <Button variant="primary" href="#" target="_blank">
-                    Demo
-                  </Button>
-                  <Button variant="secondary" href="#" target="_blank">
-                    GitHub
-                  </Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4} className="mb-4">
-            <Card>
-              <Card.Img variant="top" src="project-image.jpg" />
-              <Card.Body>
-                <Card.Title>Project Name</Card.Title>
-                <Card.Text></Card.Text>
-                <div className="d-flex justify-content-between">
-                  <Button variant="primary" href="#" target="_blank">
-                    Demo
-                  </Button>
-                  <Button variant="secondary" href="#" target="_blank">
-                    GitHub
-                  </Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4} className="mb-4">
-            <Card>
-              <Card.Img variant="top" src="project-image.jpg" />
-              <Card.Body>
-                <Card.Title>Project Name</Card.Title>
-                <Card.Text></Card.Text>
-                <div className="d-flex justify-content-between">
-                  <Button variant="primary" href="#" target="_blank">
-                    Demo
-                  </Button>
-                  <Button variant="secondary" href="#" target="_blank">
-                    GitHub
-                  </Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-          {/* Add more project cards */}
         </Row>
       </Container>
     </section>

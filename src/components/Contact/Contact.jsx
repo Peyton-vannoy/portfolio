@@ -1,9 +1,10 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
 
 function Contact() {
   return (
-    <section id="contact" className="py-5">
+    <section id="contact" className="py-3">
       <Container className="text-center">
         <h2 className="mb-4">Get In Touch</h2>
         <div className="contact-links">
