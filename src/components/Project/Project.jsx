@@ -28,7 +28,7 @@ function Project() {
                   News Explorer is a web application that allows users to search
                   for news articles and save them to their profile. It uses the
                   News API to fetch news articles and the user can save them to
-                  their profile.
+                  their profile. Hosted through netlify.
                 </Card.Text>
                 <div className="d-flex justify-content-between">
                   <Button
@@ -41,6 +41,45 @@ function Project() {
                   <Button
                     variant="secondary"
                     href="https://github.com/Peyton-vannoy/NewsExplorer-frontend/tree/stage-react-api"
+                    target="_blank"
+                  >
+                    GitHub
+                  </Button>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4} className="mb-4">
+            <Card>
+              <Card.Img
+                style={{
+                  height: "180px",
+                  objectFit: "cover",
+                }}
+                className="img-fluid"
+                variant="top"
+                src={TriplePeaksCoffee}
+              />
+              <Card.Body>
+                <Card.Title>Triple Peaks Coffee</Card.Title>
+
+                <Card.Text>
+                  Triple Peaks Coffee is a web application that allows users to
+                  view the menu watch a video about different french press
+                  techniques. Book a table and view the menu. Hosted through
+                  netlify.
+                </Card.Text>
+                <div className="d-flex justify-content-between">
+                  <Button
+                    variant="primary"
+                    href="https://triplepeakscoffeeshop.netlify.app/"
+                    target="_blank"
+                  >
+                    Demo
+                  </Button>
+                  <Button
+                    variant="secondary"
+                    href="https://github.com/Peyton-vannoy/se_project_coffeeshop"
                     target="_blank"
                   >
                     GitHub
