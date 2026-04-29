@@ -1,17 +1,30 @@
+:root {
+  --color-primary: #c9a96e;
+  --color-secondary: #0f0f0f;
+  --color-text: #fff;
+  --color-text-secondary: rgba(255, 255, 255, 0.6);
+  --color-text-tertiary: rgba(255, 255, 255, 0.25);
+  --color-background: #0f0f0f;
+  --color-background-secondary: #1a1a1a;
+  --color-background-tertiary: #2a2a2a;
+  --color-background-quaternary: #3a3a3a;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #0f0f0f;
-  color: #fff;
+  background-color: var(--color-background);
+  color: var(--color-text);
   font-family: "DM Sans", sans-serif;
 }
 
 .header {
   padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav {
@@ -30,22 +43,25 @@ body {
 
 .nav__link {
   text-decoration: none;
-  color: rgb(255, 255, 255, 0.6);
+  color: var(--color-text-secondary);
 }
 
 .nav__link:hover {
-  color: #fff;
+  color: var(--color-text);
 }
 
 .main {
-  padding: 0 2rem 0 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+section {
+  padding: 2rem 1.75rem;
+}
+
 .hero {
   min-height: 100vh;
-  padding: 1rem 0;
+  padding: 3.5rem 1.875rem 2.875rem;
 }
 
 .hero__container {
@@ -57,7 +73,7 @@ body {
 .hero__eyebrow {
   font-size: 1.2rem;
   letter-spacing: 0.15em;
-  color: #c9a96e;
+  color: var(--color-primary);
 }
 
 .hero__title {
@@ -68,7 +84,7 @@ body {
 .hero__title-name {
   font-style: italic;
   display: block;
-  color: #c9a96e;
+  color: var(--color-primary);
 }
 
 .hero__description {
@@ -85,7 +101,7 @@ body {
 .hero__cta {
   padding: 0.75rem 1.5rem;
   border-radius: 100px;
-  background-color: #000;
+  background-color: var(--color-secondary);
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
@@ -96,37 +112,45 @@ body {
 
 .hero__cta--primary {
   background-color: #c9a96e;
-  color: #0f0f0f;
+  color: var(--color-secondary);
 }
 
 .hero__cta--secondary {
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.about {
-  padding: 4rem 0;
+  border: 1px solid var(--color-text-tertiary);
+  color: var(--color-text-secondary);
 }
 
 .about__eyebrow {
   font-size: 1.2rem;
-  letter-spacing: 0.15em;
-  margin-bottom: 2rem;
-  color: #c9a96e;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--color-text-tertiary);
 }
 
 .about__grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
-  align-items: center;
+  align-items: start;
 }
 
 .about__image {
-  width: 100%;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  object-fit: cover;
 }
+
+.about__description {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* .about__description strong {
+  color: var(--color-text);
+  font-weight: 500;
+} */
 
 @media (max-width: 600px) {
   .hero__cta-container {
