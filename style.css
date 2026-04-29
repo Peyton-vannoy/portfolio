@@ -5,6 +5,8 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #0f0f0f;
+  color: #fff;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -28,7 +30,11 @@ body {
 
 .nav__link {
   text-decoration: none;
-  color: #000;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.nav__link:hover {
+  color: #fff;
 }
 
 .main {
@@ -51,6 +57,7 @@ body {
 .hero__eyebrow {
   font-size: 1.2rem;
   letter-spacing: 0.15em;
+  color: #c9a96e;
 }
 
 .hero__title {
@@ -61,6 +68,7 @@ body {
 .hero__title-name {
   font-style: italic;
   display: block;
+  color: #c9a96e;
 }
 
 .hero__description {
@@ -86,6 +94,17 @@ body {
   align-content: center;
 }
 
+.hero__cta--primary {
+  background-color: #c9a96e;
+  color: #0f0f0f;
+}
+
+.hero__cta--secondary {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .about {
   padding: 4rem 0;
 }
@@ -94,6 +113,7 @@ body {
   font-size: 1.2rem;
   letter-spacing: 0.15em;
   margin-bottom: 2rem;
+  color: #c9a96e;
 }
 
 .about__grid {
