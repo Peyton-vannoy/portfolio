@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -72,16 +76,46 @@ body {
 
 .hero__cta {
   padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 100px;
   background-color: #000;
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
-  width: 150px;
+  width: 200px;
+  text-align: center;
+  align-content: center;
+}
+
+.about {
+  padding: 4rem 0;
+}
+
+.about__eyebrow {
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 2rem;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about__image {
+  width: 100%;
+  border-radius: 50%;
 }
 
 @media (max-width: 600px) {
   .hero__cta-container {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .about__grid {
+    grid-template-columns: 1fr;
   }
 }
