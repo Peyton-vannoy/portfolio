@@ -60,14 +60,18 @@ section {
 }
 
 .hero {
-  min-height: 100vh;
   padding: 3.5rem 1.875rem 2.875rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.hero__header {
+  text-align: center;
 }
 
 .hero__eyebrow {
@@ -90,10 +94,12 @@ section {
 .hero__description {
   font-size: 1.2rem;
   line-height: 1.5;
+  color: var(--color-text-secondary);
 }
 
 .hero__cta-container {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-top: 1.125rem;
 }
@@ -126,6 +132,7 @@ section {
   text-transform: uppercase;
   font-weight: 400;
   color: var(--color-text-tertiary);
+  margin-bottom: 1.5rem;
 }
 
 .about__grid {
@@ -155,11 +162,20 @@ section {
 @media (max-width: 600px) {
   .hero__cta-container {
     flex-direction: column;
+    align-items: center;
   }
 }
 
 @media (max-width: 700px) {
+  .about__eyebrow {
+    text-align: center;
+  }
   .about__grid {
     grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .about__image {
+    margin: 0 auto;
   }
 }
